@@ -12,9 +12,9 @@ public class TokensReceiveEvent extends Event implements Cancellable {
     private boolean isCancelled;
 
     private Profile profile;
-    private long amount;
+    private int amount;
 
-    public TokensReceiveEvent(Profile profile, long amount) {
+    public TokensReceiveEvent(Profile profile, int amount) {
         this.profile = profile;
         this.amount = amount;
     }
@@ -27,7 +27,7 @@ public class TokensReceiveEvent extends Event implements Cancellable {
         return amount;
     }
 
-    public void setAmount(long amount) {
+    public void setAmount(int amount) {
         this.amount = amount;
     }
 
