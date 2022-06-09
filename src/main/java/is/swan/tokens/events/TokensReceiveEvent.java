@@ -23,7 +23,7 @@ public class TokensReceiveEvent extends Event implements Cancellable {
         return profile;
     }
 
-    public long getAmount() {
+    public int getAmount() {
         return amount;
     }
 
